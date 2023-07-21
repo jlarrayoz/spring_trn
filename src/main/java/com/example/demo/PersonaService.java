@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class PersonaService {
@@ -16,6 +17,7 @@ public class PersonaService {
 		this.direccionService = direccionService;
 	}
 	
+	@Transactional
 	public Persona addPersona(Persona persona) throws Exception {
 		Persona aux = personaRepo.save(persona);
 		
