@@ -33,8 +33,3 @@ SET global general_log = on;
 SET global general_log_file='/var/log/mysql.log';
 SET global log_output = 'file'; 
 ```
-
-
-Proyecto de ejemplo:
-
-https://www.geeksforgeeks.org/spring-boot-transaction-management-using-transactional-annotation/
